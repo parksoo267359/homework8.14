@@ -1,0 +1,72 @@
+/*css 주석 다는 방법*/ /**/
+body {       /**/
+    margin: 10; /*바깥쪽 여백을 의미*/
+    background-color: #646EFF; /*배경색 파란색으로 변경(색상표)*/
+    color:#FF9696;  /*본문 글자 색깔이 변경 됨*/
+    font-family: 'Do Hyeon', curs ive;  /*속성은 선택된 요소에 우선 순위가 지정된 font family 이름과 지정할 수 있는 기능*/
+}  /**/
+.container-box {  /*html 기능을 구현하기 위해 컨테이너 박스에 기능을 넣어둔다.*/
+    position: absolute; /*css 위치를 정해줌 기본값(static) (relative)오픈셋적용 가운데 정렬*/
+    width:800px; /*크기 컨테이너 박스 */
+    height: 500px;  /*높이; 컨테이너 박스 */
+    background-color: #FFC81E; /*색깔 컨테이너 박스 */
+    border: solid 20px #FF0000; /*테두리 컨테이너 박스*/
+    border-radius: 11115px; /*테두리 모양*/
+    margin-top: 5%; /*위치 비율로 결정*/
+    margin-left: auto; /*위치 중앙정렬하기*/
+    margin-right: auto; /*위치* 중앙정렬하기/
+    text-align: center; /*위치 중앙위치*/
+}
+#list{
+    height: 50px;/*높이*/
+    overflow-y: auto; /*스크룰바 기능*/
+}
+#list::-webkit-scrollbar{ 
+    display: none;
+}
+.contents li {
+    display: flex; 
+    justify-content: center; 
+    width: 80%; /* 지우기 기능 위치*/
+    border-bottom: solid 1px #f8f8f2; /* 선색깔*/
+}
+.contents div{
+    flex-grow: 1;
+    font-size: 2rem; /* 택스트 배열 위치*/
+}
+.inputlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 100px;
+    padding-top: 10px;
+    border-top:15px solid #000000;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    margin-top: 100px;
+} /*컨테이너 안에 글씨와 선을 조정*/
+.inputlist h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+input {
+    text-align: center;
+    font-family: 'Do Hyeon', cursive;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 1000px;
+    height: 50px; /*해야할 일을 입력하세요를 글자 크기를 꾸며줌.*/
+}
+button {
+    font-size: 1.5rem;
+    font-family: 'Do Hyeon', cursive;
+    font-weight: bold;
+    text-align: center;
+    color:#f8f8f2
+    background-color:transparent;
+    box-shadow: none;
+    outline: none;
+    border: 0;
+} /*지우기 버튼을 꾸며줌..*/

@@ -1,0 +1,30 @@
+<!DOCTYPE html> <!--버전을 확인하고 웹문서에 전달하는 기능, 선언 기능 호환성을 높힘. -->
+<!----> <!-- html 주석 처리방법 -->
+<html lang="ko"> <!--속성을 기재하는 이유는 웹 접근성 향상, 올바른 정보로 정보해석-->	
+<head> <!--html 문법 heda body 구분--> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!--문서 호환성 기능--> 
+    <link rel="stylesheet" href="1.css"><!--1.css파일을 불려오는 방법--> 
+    <title>ToDoList</title  <!--제목은 To Do List 표기--> 
+</head> <!--head 태그 마무리-->
+<body> <!--body 태그 시작-->
+    <div id="containerBox" class="container-box"> <!--div태그 css,js 변경하는 
+컨테이너 사용-->
+        <div id="contents" class="contents"> <!--2개의 기능을 구현하기 하기 위해 
+구분 시킨 것으로 생각-->
+            <h1>To Do List</h1> <!--글자크기 h1으로 제일 크게 구현-->
+            <ul id="list"></ul> <!--사각형 모향으로 구분되었고 css로 보라색표기-->
+        </div> <!--div 태그 닫아줌.-->
+    </div>
+<!--div 태그는 웹사이트 영역의 레이아웃을 구분-->
+    <div class="inputlist"> <!--div class 선택자로 class를 많이 쓰고 한 요소 여러개
+넣을 수가 있음.-->
+        <h2>아래 입력칸에 오늘 할일을 입력해주세요</h2> <!--h2태그 h1>h2 표기-->
+        <form id="listForm"> <!--id는 식별자=명칭 id는 중복을 허용하지 않음.-->
+            <input type="text" placeholder="해야할 일을 입력하세요">
+			<!--속상값을 text placholedr를 이용했는데 플레이스홀더는 흐린 글씨를 의미-->
+        </form> <!--입력 양식 전체를 감싸는 태그-->
+    </div> <!--div 태그2 마무리-->
+<script src="111.js"></script> <!--js를 불려오는 방법. head와 body에 쓰든 무관-->
+</body>  <!--body 태그 마무리-->
+</html> <!--html 끝맺음-->
+	
